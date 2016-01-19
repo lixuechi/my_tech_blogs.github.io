@@ -1,1 +1,43 @@
 #csapp notes
+
+perplexing => confusing
+
+unix> ./hello  (—> ./hello is not a built-in shell command, so it is rendered as a name)
+hello, world
+unix>
+
+ALU: Arithmetic/Logic Unit
+PC: Program counter
+USB: Universal Serial Bus
+
+Buses carry words(4/8 bytes) between components.
+System bus, Memory bus, I/O bus
+
+I/O devices: keyboard + mouse (input); display (output); a disk drive for long-term storage of data and programs.
+Each I/O device connects to the I/O bus by a controller or an adapter.
+
+[controller et adapter]
+controllers: are chip sets in the device itself or on the system’s main printed circuit board (motherboard);
+adapter: a card that plugs into a slot on the motherboard
+
+Controllers and adapters transfer info back n forth between the I/O bus and an I/O device.
+
+Main memory contains a collection of Dynamic Random Access Memory chips.
+
+CPU = PC + registers + processor + ALU
+CPU can:
+load   a byte/word main memory => a register
+store   a register => a location in main memory
+operate   ALU + registers
+jump    a word  instruction => PC
+
+
+
+
+
+
+
+
+
+
+
