@@ -31,6 +31,50 @@ store   a register => a location in main memory
 operate   ALU + registers
 jump    a word  instruction => PC
 
+The process of reading an executable .o file:
+1. data: keyboard => I/O bridge => I/O bus interface => registers => I/O bridge => main memory;
+2. executable file: Disk => I/O bridge => main memory;
+3. output: main memory => register => bus interface => I/O bridge => display;
+
+facts:
+a register holds a few hundred bytes of info;
+the main memory holds billions of bytes;
+
+processor-memory gap: the processor runs 100 times faster than memory.
+(cache memories arise for this reason)
+
+L1 cache: 
+on the processor chip (inside the processor);
+holds tens of thousands of bytes;
+can be accessed nearly as fast as registers;
+
+L2 cache:
+connected to the processor by a special bus;
+holds hundreds of thousands to millions of bytes;
+accessed 5-10 times faster than main memory;
+
+L3 cache:
+NA
+
+Cache: smaller than main memory but faster to access
+
+Layers:
+Application programs;
+Operating systems;
+hardwares (Processor, Main memory, I/O devices);
+
+CPU interleaves processes.
+When switching processes, “context” is saved so that the process resumes nicely.
+
+Process == several threads;
+
+
+
+
+
+
+
+
 
 
 
