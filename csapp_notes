@@ -68,6 +68,15 @@ When switching processes, “context” is saved so that the process resumes nic
 
 Process == several threads;
 
+Virtual memory:
+Kernel virtual memory
+User stack (created at run time)
+Memory mapped region for shared libraries
+Run-time heap (created at run time by malloc)
+Read/write data
+Read-only code and data
+
+
 
 
 
