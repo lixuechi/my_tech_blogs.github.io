@@ -76,8 +76,9 @@ Run-time heap (created at run time by malloc)
 Read/write data
 Read-only code and data
 
+any file == bytes (a unique view for I/O everything)
 
-
+Linus is Finnish
 
 
 
