@@ -2,3 +2,4 @@
 1. log
 2. optimization
 3. 'packaging' (obfuscation, ...)
+4. DEBUG file is larger than RELEASE file for its lack of optimization 
