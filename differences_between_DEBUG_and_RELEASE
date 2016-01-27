@@ -3,3 +3,4 @@
 2. optimization
 3. 'packaging' (obfuscation, ...)
 4. DEBUG file is larger than RELEASE file for its lack of optimization 
+5. Switches may only reside in one mode but affects both.
