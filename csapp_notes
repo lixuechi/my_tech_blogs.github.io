@@ -80,6 +80,17 @@ any file == bytes (a unique view for I/O everything)
 
 Linus is Finnish
 
+Networks: another I/O between computers
+
+Concurrency: multiple & simultaneous activities
+Parallelism: the use of concurrency to make a system run faster.
+Parallelism can be used at 3 levels of abstractions:
+1. Thread-level concurrency
+2. Instruction-Level parallelism
+3. Single-Instruction, Multiple-Data (SIMD) Parallelism
+
+system = hardware + software
+
 
 
 
