@@ -1,0 +1,9 @@
+#shallow copy and deep copy~
+
+While assigning value from one to copy to another:
+shallow copy=> have the same value, pointing to the same address
+deep copy=> have the same value but pointing to different address
+
+ whether to use shallow copy or deep copy doesn't depend on time efficiency, space efficiency or the programming language, but which one is logically legit.
+ 
+ 
