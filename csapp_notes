@@ -91,6 +91,9 @@ Parallelism can be used at 3 levels of abstractions:
 
 system = hardware + software
 
+Difference between integer and floating-point numbers:
+finiteness of representation.
+
 
 
 
