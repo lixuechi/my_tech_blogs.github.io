@@ -94,7 +94,8 @@ system = hardware + software
 Difference between integer and floating-point numbers:
 finiteness of representation.
 
-
+hexadecimal notation:
+from ‘a’ to ‘f’: can be either upper case or lower case, or mixed cases.
 
 
 
