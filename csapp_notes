@@ -97,7 +97,12 @@ finiteness of representation.
 hexadecimal notation:
 from ‘a’ to ‘f’: can be either upper case or lower case, or mixed cases.
 
-
+i + 4j
+x = 2048 = 2^11
+n = 11 = 3 + 4 * 2
+if it’s in the form of (i+4j)
+x(hex) = a leading hex digit of 1 (i=0), 2(i=1), 4(i=2), 8(i=3), followed by j hex 0s.
+hex rep => 0x800
 
 
 
