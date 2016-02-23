@@ -103,8 +103,21 @@ n = 11 = 3 + 4 * 2
 if it’s in the form of (i+4j)
 x(hex) = a leading hex digit of 1 (i=0), 2(i=1), 4(i=2), 8(i=3), followed by j hex 0s.
 hex rep => 0x800
-
-
+Why didn’t I understand the above formula which obnoxiously seems so easy:
+For x = 2^n, x is a binary with a leading 1, and n following 0s.
+For example, 
+if n = 0, x = 1(d)/0000.0001(b)
+if n = 1, x = 2(d)/0000.0010(b)
+if n = 2, x = 4(d)/0000.0100(b)
+if n = 3, x = 8(d)/0000.1000(b)
+if n = 4, x = 16(d)/0001.0000(b) === there are 4 of 0s following 1
+Now look back, 
+x = 2^(i + 4j) = 2^i * 2^4j
+if i = 0, x = 2^4j = a binary with a leading 1 and 4j following 0s = a hexadecimal with a leading 1 and j following hex 0s;
+if i = 1, x = 2 * 2^4j = in binary the result of (i==0) left shift 1 digit (<<1), which is a leading 10(b) and 4j following 0s = in hex a leading 2(h) and 4j following hex 0s;
+if i = 2, x = 4 * 2^4j = in binary the result of (i==0) left shift 2 digits (<<2), which is a leading 100(b) and 4j following 0s;
+if i = 3, x = 8 * 2^4j = …
+Hah, now I get it.
 
 
 
