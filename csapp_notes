@@ -119,8 +119,24 @@ if i = 2, x = 4 * 2^4j = in binary the result of (i==0) left shift 2 digits (<<2
 if i = 3, x = 8 * 2^4j = …
 Hah, now I get it.
 
+* What is virtual addresses?
 
 
+
+The exact number of bytes for each kind of data types (char, short int, int, long int, long long int, char*, float, double) depends on both the machine and the compiler.
+machines: 32-bit/64-bit
+“long” and “char *” both use the full word size of the machine:
+long: 4 in 32-bit/8 in 64-bit
+char*: 4 in 32-bit/8 in 64-bit
+
+2 different floating-point formats:
+single precision -> float
+double precision -> double
+
+Programmer should be aware of portability across different machines and compilers.
+One aspect of portability -> make the program insensitive to the exact sizes of the different data types.
+C has set lower bounds on the numeric ranges of data types, but no upper bounds.
+For example, a program object declared as int cannot always be used to store a pointer. This can work for most 32-bit machines but leads to problems on a 64-bit machine.
 
 
 
