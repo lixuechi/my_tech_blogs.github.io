@@ -139,8 +139,28 @@ C has set lower bounds on the numeric ranges of data types, but no upper bounds.
 For example, a program object declared as int cannot always be used to store a pointer. This can work for most 32-bit machines but leads to problems on a 64-bit machine.
 
 
+a multi-byte object is stored as a contiguous sequence of bytes, with the address of the object given by the smallest address of the bytes used.
 
+one address contains one byte.
 
+little endian: the least significant bit comes first
+big endian: the most significant bit comes first 
 
+bi-endian microprocessors: can be configured to operate as either little- or big-endian machines.
 
+The address of a multi-byte object is the address of the first byte of this object. To determine which is the first byte, we use little- or big-endian.
+For a int 0x01234567,
+when in little-endian: the first byte is 67
+when in big-endian: the first byte is 01
+
+A method in C might be called a routine.
+a byte pointer can be of type unsigned char.
+The byte pointer points to the address of a sequence of bytes.
+
+The C formatting directive “%.2x” indicates that an integer should be printed in hexadecimal with at least two digits.
+
+“typedef” in C:
+typedef int *int_pointer;
+int_pointer ip;
+defines type “int_pointer” to be a pointer to an int.
 
